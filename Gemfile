@@ -32,9 +32,11 @@ gem 'jquery-rails'
 
 group :development do
 	gem 'rspec-rails'
+	gem 'rspec-rails', :group => [:development, :test]
 end
 
 group :test do
 	gem 'rspec'
 	gem 'webrat'
+	gem 'rspec-rails', :group => [:development, :test]
 end
